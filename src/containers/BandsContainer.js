@@ -4,10 +4,8 @@ import BandInput from "../components/BandInput"
 
 class BandsContainer extends Component {
 
-    renderBands = () => {
-        return this.props.bands.map((b,i) => <li key={i}>{b}</li>)
+    renderBands = () => this.props.bands.map((b,i) => <li key={i}>{b}</li>)
         
-    }
     
     render() {
         return (
